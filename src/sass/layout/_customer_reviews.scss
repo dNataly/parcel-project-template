@@ -78,48 +78,51 @@
  
    }
    .cust-text {
-     background-color: #FAFAFA;
+       position: relative;
+     background-color: $customer-review-bg;
      margin-top: 20px;
      margin-bottom:30px;
        padding-bottom: 16px;
        padding-top: 43px;
- 
+       &::before {
+        width: 54px;
+        z-index: 1;
+        top: 28px;
+        left: 130px;
+        height: 40px;
+        position: absolute;
+        content: '';
+        background-size: contain;
+        background-image: url(../../src/images/quotes.svg);
+    }
        
    }
  
    .customer-reviews-text {
+       position: relative;
+       z-index: 20;
      width: 175px;
      display: inline-block;
      background-image: 
-     repeating-linear-gradient(180deg, transparent, transparent 28.5px, #E1E1E1 29.5px);
+     repeating-linear-gradient(180deg, transparent, transparent 28.5px, $customer-review-accent 29.5px);
        text-align: center;
-       font-family: DM Sans; 
+       font-family: $main-font; 
        font-style: normal;
        font-weight: 500;
        font-size: 16px;
        line-height: 1.86;
        text-align: center;
        padding-bottom: 10px;
-       /* padding-left: 57px;
-       padding-right: 66px;
-       padding-bottom: 26px;
-       padding-top: 43px; */
        letter-spacing: 0.04em;   
        color: #000000;
-       background-color: #FAFAFA;
+       background-color: transparent;
+       
    }
  
-//    .cust-pic{  
-//      margin: 0 auto;
-//      text-align: center;
-//      display: inline-block;
-//      width: 85px;
-//      height: 85px;
-//      background-size: cover;
-//  }
+
  
    .customer-reviews-info {
-     font-family: DM Sans;
+     font-family: $main-font;
        display: flex;
        justify-content: center;
      font-style: normal;
@@ -153,14 +156,16 @@
    @media screen and (min-width: 768px) {
      .customer-reviews-text {
        width: 550px; 
-       padding: 0px;
      }
      .cust-text {
        margin-top: 20px;
        margin-bottom: 24px;
-         padding-bottom: 34px;
+         padding-bottom: 24px;
          padding-top: 47px;
-   
+         &::before {
+            top: 30px;
+            left: 50px;
+        }
          
      }
      .customer-reviews-list {
@@ -170,3 +175,23 @@
        margin-bottom: 30px;
      }
    }
+   
+   @media screen and (min-width: 1280px) {
+    .customer-reviews-text {
+      width: 822px; 
+    }
+    .cust-text {
+      margin-top: 20px;
+      margin-bottom: 24px;
+        padding-bottom: 29px;
+        &::before {
+            top: 34px;
+            left: 95px;
+        }
+  
+        
+    }
+    .customer-reviews-info {
+      margin-bottom: 35px;
+    }
+  }
