@@ -1,6 +1,5 @@
 .contacts {
-    background-image: linear-gradient(to bottom, rgba( 255, 255, 255, 0.4),
-     rgba(255, 245, 246, 0.4));
+    background-image: linear-gradient(white 12%, rgb(255, 245, 246) 1%);
     }
 
 .section-padding {
@@ -159,8 +158,7 @@
 
 @media screen and (min-width: 768px) {
   .contacts {
-    background-image: linear-gradient(to bottom, rgba( 255, 255, 255, 0.4),
-     rgba(255, 245, 246, 0.4));
+    background-image: linear-gradient(white 26%, rgb(255, 245, 246) 1%);
     }
 
 
