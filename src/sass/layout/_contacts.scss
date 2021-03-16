@@ -255,7 +255,7 @@
      rgba(255, 245, 246, 0.4)),url(../images/sectionbg.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 1280px;
     background-position: center;
   
   }
@@ -335,15 +335,15 @@
     width: 180px;
   }
 
-  .button-location-menu {
-   position: absolute;
-    width: 100%;
-    max-width: 480px;
-    height: 50% vh;
-    top: 70%;
-    left: 0;
-    transform: translateY(70%) translateX(-75%);
-    border-color: bisque;
-    padding: 48px 40px;
-  }
+//   .button-location-menu {
+//    position: absolute;
+//     width: 100%;
+//     max-width: 480px;
+//     height: 50% vh;
+//     top: 70%;
+//     left: 0;
+//     transform: translateY(70%) translateX(-75%);
+//     border-color: bisque;
+//     padding: 48px 40px;
+//   }
 }
