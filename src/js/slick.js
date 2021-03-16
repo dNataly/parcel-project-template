@@ -1,5 +1,5 @@
 $(function() {
-    $('.customer-rewievs-div').slick( {
+    $('.customer-reviews-div').slick( {
         arrows: false,
         dots: true
     }
