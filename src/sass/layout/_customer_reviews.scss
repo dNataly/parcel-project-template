@@ -78,17 +78,22 @@
  
    }
    .cust-text {
+      
        position: relative;
+       margin: 0 auto;
+       width: 280px;
      background-color: $customer-review-bg;
      margin-top: 20px;
      margin-bottom:30px;
+      padding-left: 50px;
+      padding-right: 50px;
        padding-bottom: 16px;
        padding-top: 43px;
        &::before {
         width: 54px;
         z-index: 1;
         top: 28px;
-        left: 130px;
+        left: 61px;
         height: 40px;
         position: absolute;
         content: '';
@@ -101,7 +106,9 @@
    .customer-reviews-text {
        position: relative;
        z-index: 20;
-     width: 175px;
+     width: 180px;
+     padding-left: 7px;
+     padding-right: 7px;
      display: inline-block;
      background-image: 
      repeating-linear-gradient(180deg, transparent, transparent 28.5px, $customer-review-accent 30.5px);
@@ -109,8 +116,8 @@
        font-family: $main-font; 
        font-style: normal;
        font-weight: 500;
-       font-size: 16px;
-       line-height: 1.86;
+       font-size: 12px;
+       line-height: 2.55;
        text-align: center;
        padding-bottom: 10px;
        letter-spacing: 0.04em;   
@@ -154,17 +161,28 @@
    }
 
    @media screen and (min-width: 768px) {
+    .customer-reviews {
+      padding-top: 121px;
+    }
      .customer-reviews-text {
-       width: 550px; 
+       width: 515px; 
+       padding-right: 44px;
+       padding-left: 20px;
+       font-size: 14px;
+       line-height: 2.16;
      }
      .cust-text {
+
+      width: 620px;
+      padding-left: 40px;
+      padding-right: 36px;
        margin-top: 20px;
        margin-bottom: 24px;
-         padding-bottom: 24px;
+         padding-bottom: 18px;
          padding-top: 47px;
          &::before {
             top: 30px;
-            left: 50px;
+            left: 30px;
         }
          
      }
@@ -172,21 +190,26 @@
        margin-bottom: 12px;
      }
      .customer-reviews-info {
-       margin-bottom: 30px;
+       margin-bottom: 35px;
      }
    }
    
    @media screen and (min-width: 1280px) {
     .customer-reviews-text {
-      width: 822px; 
+      width: 800px;
+      padding-left: 35px;
+      padding-right: 35px; 
+      font-size: 16px;
+      line-height: 1.86;
     }
     .cust-text {
+      width: 922px;
       margin-top: 20px;
-      margin-bottom: 24px;
-        padding-bottom: 29px;
+      margin-bottom: 14px;
+        padding-bottom: 25px;
         &::before {
             top: 34px;
-            left: 95px;
+            left: 50px;
         }
   
         
