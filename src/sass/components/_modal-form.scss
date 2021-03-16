@@ -177,7 +177,8 @@
   border-radius: 2px;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-form-check-policy:focus + & {
+  .modal-form-check-policy:focus + &,
+  .modal-form-check-policy:hover + & {
     border: 2px solid $btn-bg-accent;
   }
 
