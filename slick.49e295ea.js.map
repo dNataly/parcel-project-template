@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/slick.js"],"names":["$","slick","arrows","dots"],"mappings":";AAAAA,EAAE,WACEA,EAAE,yBAAyBC,MAAO,CAC9BC,QAAQ,EACRC,MAAM","file":"slick.49e295ea.js","sourceRoot":"../src","sourcesContent":["$(function() {\n    $('.customer-reviews-div').slick( {\n        arrows: false,\n        dots: true\n    }\n\n    );\n})"]}
