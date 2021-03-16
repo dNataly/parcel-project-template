@@ -19,21 +19,52 @@
   letter-spacing: 0.04em;
 
   &::before {
+    content: "";
     position: absolute;
     top: -65px;
   }
 }
 
-.advantages-heading.first::before {
-    content: url(../images/advantages/icon1.png);
+.advantages-heading.first {
+    &::before {
+    background: url(../images/advantages/icon1.png);
+    width: 33px;
+    height: 50px;
+
+     @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background: url(../images/advantages/icon1@2x.png) no-repeat;
+        background-size: contain;
+    }
+    }
+
+   
 }
 
-.advantages-heading.second::before {
-    content: url(../images/advantages/icon2.png);
+.advantages-heading.second {
+    &::before {
+    background: url(../images/advantages/icon2.png);
+    width: 50px;
+    height: 50px;
+
+    @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background: url(../images/advantages/icon2@2x.png) no-repeat;
+        background-size: contain;
+    }
+    }
+
 }
 
-.advantages-heading.third::before {
-    content: url(../images/advantages/icon3.png);
+.advantages-heading.third {
+    &::before {
+    background: url(../images/advantages/icon3.png);
+    width: 44px;
+    height: 50px;
+
+     @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background: url(../images/advantages/icon3@2x.png) no-repeat;
+        background-size: contain;
+    }
+    }
 }
 
 .advantages-description {
@@ -63,10 +94,11 @@
         font-size: 48px;
     }
     .advantages-container {
-        display: flex;
+        display: grid;
+        grid-template-columns: 180px 180px 180px;
+        grid-gap: 60px;
     }
     .advantages-block-item {
-        margin-right: 60px;
 
         &:nth-child(2) {
             margin-top: 36px;
@@ -74,9 +106,12 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .advantages {
         padding-bottom: 139px;
+    }
+    .advantages-container {
+        grid-template-columns: 1fr 1fr 1fr;
     }
     .advantages-heading {
         font-size: 58px;
@@ -85,7 +120,6 @@
         font-size: 16px;
     }
     .advantages-block-item {
-        margin-right: 30px;
         :nth-child(2) {
             margin: 40px 0 0 15px;
         }

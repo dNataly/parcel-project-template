@@ -1,3 +1,7 @@
+.contacts {
+    background-image: linear-gradient(white 12%, rgb(255, 245, 246) 1%);
+    }
+
 .section-padding {
   padding-top: 86px;
   padding-bottom: 113px;
@@ -127,9 +131,13 @@
   width: 161.45px;
   height: 44px;
   border-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-location {
+  display: flex;
+  justify-content: center;
   background: #d41342;
   font-weight: bold;
   font-size: 16px;
@@ -149,6 +157,11 @@
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    background-image: linear-gradient(white 26%, rgb(255, 245, 246) 1%);
+    }
+
+
   .section-padding {
     padding-top: 119px;
     padding-bottom: 165px;
@@ -233,11 +246,20 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section-padding {
     padding-top: 132px;
   }
 
+
+  .contacts {
+    background-image: url(../images/sectionbg.png), linear-gradient(white 26%, rgb(255, 245, 246) 1%);
+    background-repeat: no-repeat;
+    // background-size: 1280px;
+    background-position: center;
+  
+  }
+  
   .contacts-restaurants {
     margin: -15.5px;
     padding: 0;
@@ -312,4 +334,16 @@
   .button-franchise {
     width: 180px;
   }
+
+//   .button-location-menu {
+//    position: absolute;
+//     width: 100%;
+//     max-width: 480px;
+//     height: 50% vh;
+//     top: 70%;
+//     left: 0;
+//     transform: translateY(70%) translateX(-75%);
+//     border-color: bisque;
+//     padding: 48px 40px;
+//   }
 }
