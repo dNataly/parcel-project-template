@@ -81,15 +81,18 @@
   color: #ffffff;
 }
 
-.hero-btn-position {
+.hero-link-position {
   display: flex;
   justify-content: flex-start;
   margin-top: 19px;
 }
 
-.hero-btn {
+.hero-link {
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
   height: 24px;
   border: none;
@@ -108,10 +111,10 @@
   }
 }
 
-.hero-products-btn {
-  display: block;
+.hero-products-link {
   width: 62.4px;
   background-color: #d41443;
+  color: #ffffff;
 
   &:hover,
   &:focus {
@@ -119,22 +122,15 @@
   }
 }
 
-.hero-products-link {
-  color: #ffffff;
-}
-
-.hero-how-btn {
+.hero-how-link {
   width: 82.8px;
   background-color: #ffffff;
+  color: #d41443;
 
   &:hover,
   &:focus {
     background-color: #ecebeb;
   }
-}
-
-.hero-how-link {
-  color: #d41443;
 }
 
 .hero-title-accent {
@@ -165,6 +161,7 @@
 // Tablet styles //
 
 @media screen and (min-width: 768px) {
+
   .hero-container {
     padding-top: 94px;
     padding-bottom: 34px;
@@ -194,8 +191,8 @@
     line-height: 90.5%;
   }
 
-  .hero-btn-position {
-    margin-top: 15px;
+  .hero-link-position {
+    margin-top: 7px;
   }
 
   .hero-bio-position {
@@ -207,7 +204,7 @@
     width: 124px;
     height: 126px;
     left: 34px;
-    top: 242px;
+    top: 248px;
   }
 
   .hero-bio-text {
@@ -225,11 +222,8 @@
   }
 
   .hero-arrow-img {
-    position: absolute;
     width: 18px;
     height: 18px;
-    top: 342px;
-    left: 154px;
   }
 
   .hero-arrow-btn {
@@ -240,6 +234,14 @@
     background: transparent;
     border: none;
     border-radius: 10px;
+
+    & > picture {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      top: 348px;
+      left: 153px;
+    }
   }
 
   .hero-counter-list {
@@ -252,6 +254,10 @@
     position: relative;
     width: 53px;
     height: 44px;
+    
+    &:last-child {
+      margin-top: 13px;
+    }
 
     &::after {
     position: absolute;
@@ -332,11 +338,11 @@
     font-size: 58px;
   }
 
-  .hero-btn-position {
+  .hero-link-position {
     margin-top: 25px;
   }
 
-  .hero-btn {
+  .hero-link {
     height: 40px;
     font-size: 14px;
     line-height: 1.29;
@@ -346,11 +352,11 @@
     }
   }
 
-  .hero-products-btn {
+  .hero-products-link {
     min-width: 104px;
   }
 
-  .hero-how-btn {
+  .hero-how-link {
     min-width: 138px;
   }
 
@@ -370,27 +376,30 @@
     width: 188px;
     height: 191px;
     left: 77px;
-    top: 427px;
-  }
-
-  .hero-arrow-img {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 585px;
-    left: 292px;
+    top: 438px;
   }
 
   .hero-arrow-btn {
     width: 24px;
     height: 24px;
-    margin-top: 20px;
+    margin-top: 18px;
     border-radius: 50%;
+
+    & > picture {
+      width: 25px;
+      height: 25px;
+      top: 595px;
+      left: 291px;
+    }
   }
 
   .hero-counter-item {
     width: 92px;
     height: 76px;
+
+    &:last-child {
+      margin-top: 15px;
+    }
 
     &::after {
     left: 62px;
