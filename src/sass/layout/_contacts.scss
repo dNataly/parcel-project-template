@@ -135,6 +135,8 @@
 }
 
 .button-location {
+  display: flex;
+  justify-content: center;
   background: #d41342;
   font-weight: bold;
   font-size: 16px;
