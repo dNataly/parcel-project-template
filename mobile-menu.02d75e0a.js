@@ -122,10 +122,30 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   var menuBtnRef = document.querySelector("[data-menu-button]");
   var mobileMenuRef = document.querySelector("[data-menu]");
   var mobileBtnClose = document.querySelector("[data-menu-close]");
+  var mobileBtnClose2 = document.querySelector("[data-menu-close2]");
+  var mobileBtnClose3 = document.querySelector("[data-menu-close3]");
+  var mobileBtnClose4 = document.querySelector("[data-menu-close4]");
+  var mobileBtnClose5 = document.querySelector("[data-menu-close5]");
+  var mobileBtnClose6 = document.querySelector("[data-menu-close6]");
   menuBtnRef.addEventListener("click", function () {
     mobileMenuRef.classList.toggle("is-open");
   });
   mobileBtnClose.addEventListener('click', function () {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+  mobileBtnClose2.addEventListener('click', function () {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+  mobileBtnClose3.addEventListener('click', function () {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+  mobileBtnClose4.addEventListener('click', function () {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+  mobileBtnClose5.addEventListener('click', function () {
+    mobileMenuRef.classList.toggle("is-open");
+  });
+  mobileBtnClose6.addEventListener('click', function () {
     mobileMenuRef.classList.toggle("is-open");
   });
 })();
@@ -157,7 +177,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56392" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58112" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
