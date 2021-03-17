@@ -531,10 +531,10 @@ address {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero-container {
-    background-image: url("/t-hero-circle@2x.3b3c6953.png");
+  .hero-section {
+    background: #ffb8ca url("/t-hero-circle.51993a6a.png");
     background-repeat: no-repeat;
-    background-position: calc(50% + 100px) 75px;
+    background-position: calc(50% + 30px) 75px;
     background-size: 344px 344px;
   }
 }
@@ -1774,7 +1774,7 @@ address {
 }
 
 .contacts-address-information {
-  max-width: 440px;
+  max-width: 370px;
   margin: 0 auto;
   padding: 43px 20px;
   background: #ffffff;
