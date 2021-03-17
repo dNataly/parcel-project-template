@@ -517,7 +517,10 @@ address {
 .hero-section {
   width: 100%;
   position: relative;
-  background-color: #ffb8ca;
+  background: #ffb8ca url("/t-hero-circle.51993a6a.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 30px) 75px;
+  background-size: 344px 344px;
 }
 
 .hero-container {
@@ -525,22 +528,30 @@ address {
   margin: 0 auto;
   padding-top: 193px;
   padding-bottom: 160px;
-  background-image: url("/m-hero-circle.88216268.png");
-  background-repeat: no-repeat;
-  background-position: bottom 75px right 0;
-  background-size: 284px 344px;
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero-container {
-    background-image: url("/m-hero-circle@2x.56816c35.png");
-    background-position: bottom 75px right 0;
-    background-size: 284px 344px;
+    background-image: url("/t-hero-circle@2x.3b3c6953.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 100px) 75px;
+    background-size: 344px 344px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  .hero-section {
+    background-position: calc(50% + 100px) 75px;
   }
 }
 @media screen and (min-width: 768px) {
+  .hero-section {
+    background-color: #ffb8ca;
+    background-image: none;
+  }
+
   .hero-container {
     background-image: url("/t-hero-circle.51993a6a.png");
+    background-repeat: no-repeat;
     background-position: bottom 46px right 137px;
     background-size: 324px 324px;
   }
@@ -1763,7 +1774,7 @@ address {
 }
 
 .contacts-address-information {
-  width: 220px;
+  max-width: 440px;
   margin: 0 auto;
   padding: 43px 20px;
   background: #ffffff;
@@ -1901,6 +1912,13 @@ address {
   color: #d41443;
 }
 
+@media screen and (min-width: 320px) and (max-width: 769px) {
+  .position-content {
+    width: 200px;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts {
     background-image: linear-gradient(white 26%, #fff5f6 1%);
@@ -2261,6 +2279,24 @@ address {
     font-size: 58px;
     line-height: 1.13;
     letter-spacing: 0.06em;
+  }
+}
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  display: none;
+  text-indent: -9999px;
+  background: url("/icon_top.9c7abca8.png") no-repeat;
+  opacity: 0.2;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .scrollup {
+    background: url(/icon_top2x.ac616772.png) no-repeat;
+    background-size: contain;
   }
 }
 
