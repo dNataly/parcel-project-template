@@ -11,6 +11,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./slick/slick.scss"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./slick/slick-theme.scss"/>
   </head>
   <body>
@@ -36,5 +37,25 @@
     <script src="./js/slick.js"></script>
     <script src="./js/mobile-menu-close.js"></script>
     <script src="./js/modal-form-close.js"></script>
+    <a href="#" class="scrollup">Наверх</a>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+       
+      $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+      $('.scrollup').fadeIn();
+      } else {
+      $('.scrollup').fadeOut();
+      }
+      });
+       
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+      });
+       
+      });
+      </script>
   </body>
 </html>
