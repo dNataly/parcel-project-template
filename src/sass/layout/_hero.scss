@@ -19,12 +19,12 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
-  .hero-container {
-    background-image: url('../images/hero-images/t-hero-circle@2x.png');
-      background-repeat: no-repeat;
-      background-position:  calc(50% + 100px) 75px;
-      background-size: 344px 344px;
-  }
+  .hero-section {
+  background: #ffb8ca url('../images/hero-images/t-hero-circle.png');
+  background-repeat: no-repeat;
+  background-position:  calc(50% + 30px) 75px;
+  background-size: 344px 344px;
+}
 }
 
 @media screen and (min-width: 420px) and (max-width: 767px) {
