@@ -27,6 +27,7 @@
     </main>
     <include src="./partials/footer.html"></include>
     <include src="./partials/modal-btn.html"></include>
+    <include src="./partials/top-btn.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
@@ -37,25 +38,6 @@
     <script src="./js/slick.js"></script>
     <script src="./js/mobile-menu-close.js"></script>
     <script src="./js/modal-form-close.js"></script>
-    <a href="#" class="scrollup">Наверх</a>
-
-    <script type="text/javascript">
-      $(document).ready(function(){
-       
-      $(window).scroll(function(){
-      if ($(this).scrollTop() > 100) {
-      $('.scrollup').fadeIn();
-      } else {
-      $('.scrollup').fadeOut();
-      }
-      });
-       
-      $('.scrollup').click(function(){
-      $("html, body").animate({ scrollTop: 0 }, 600);
-      return false;
-      });
-       
-      });
-      </script>
+    <script src="./js/top-btn.js"></script>
   </body>
 </html>

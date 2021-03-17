@@ -1,11 +1,20 @@
-.scrollup{
+.scrollup {
     width:40px;
     height:40px;
     opacity:0.3;
     position:fixed;
-    bottom:50px;
+    bottom:15px;
     right:20px;
     display:none;
     text-indent:-9999px;
     background: url('../images/icon_top.png') no-repeat;
+    opacity: 0.2;
+
+      @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+        background: url(../images/icon_top2x.png) no-repeat;
+        background-size: contain;
     }
+    }
+
+
+    
