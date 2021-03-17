@@ -1,6 +1,6 @@
 .backdrop {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(61, 53, 55, 0.7);
   top: 0;
   left: 0;
   width: 100%;
@@ -80,6 +80,7 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: scroll;
   overflow-x: hidden;
+  box-shadow: -16px 3px 23px 18px rgba(22, 38, 51, 0.16), -16px 3px 23px 45px rgba(22, 38, 51, 0.14);
 
   &-nav-item {
     padding: 11px;
